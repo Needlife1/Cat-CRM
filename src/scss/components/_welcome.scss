@@ -1,0 +1,32 @@
+@use "../utilities/placeholders";
+@use "../utilities/variables" as var;
+@use "../utilities/functions" as fn;
+@use "../utilities/mixins" as mx;
+
+@use "btn/btn" as btn with($btn-layer-spacing: 4px);
+
+.welcome {
+  grid-area: welcome;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  row-gap: 16px;
+}
+
+.page-title {
+  @extend %main-title;
+  color: fn.get-color("light-primary");
+
+  &-accent {
+    @extend %main-text;
+    color: fn.get-color("light-secondary");
+    display: block;
+    margin-bottom: 8px;
+
+    @include mx.mq("lg") {
+      margin-bottom: 16px;
+    }
+  }
+}

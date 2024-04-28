@@ -1,0 +1,21 @@
+@use "../../utilities/placeholders";
+@use "../../utilities/variables" as var;
+@use "../../utilities/functions" as fn;
+@use "../../utilities/mixins" as mx;
+
+.notification-btn {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 20px;
+  min-height: 20px;
+
+  color: fn.get-color("lite-tertiary");
+
+  &-icon {
+    fill: fn.get-color("current");
+  }
+}
