@@ -1,89 +1,749 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/sass.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SASS Tutorial template</title>
-    <script type="module" crossorigin src="/vite-sass-app-template/assets/index-875b9161.js"></script>
-    <link rel="stylesheet" href="/vite-sass-app-template/assets/index.css">
-  </head>
-  <body>
-    <div class="wrapper">
-      <main class="main">
-        <div class="container">
-          <a
-            class="main-logo"
-            href="https://sass-lang.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              class="main-logo-img"
-              src="/src/img/logo-sass.png"
-              alt="Sass logo"
-              width="360"
-              height="360"
-            />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cat CRM">
+  <meta name="keywords" content="Cat CRM">
+  <meta name="author" content="Vysotsky Maxim">
+  <meta content="#000000" name="msapplication-TileColor">
+  <meta content="ie=edge" http-equiv="x-ua-compatible">
+  <meta property="og:url" content="https://yourdomain.com/your-page" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Cat CRM" />
+  <meta property="og:description" content="Cat CRM" />
+  <meta property="og:image" content="./src/image/logo.png" />
+  <link rel="icon" type="image/svg+xml" href="/scss/assets/symbol-defs.svg#logo" />
+  <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAXCAYAAAARIY8tAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAM2SURBVHgBpVXPTxNBFH77qyKWdikhAUtgSWpSwUMlafRGQ0w0XuRkjJEErxxUThoPBo9eTDSGK5D6B+CJmBgEuRBIKCZgiqjdGook1Lq0iOl2t+O8XacstcUKX7LZ2Zl535v3vjdvBfiD9vbAPY/HN+X1NgZ9Pu97jQJqRFtbIEJtx+gzTh8um83MsDXOsSlGXyFrkiMqIdxt+qCTUNjPdfzSQTnbxMOuTrR0nmiLKZLEfQCkn1rcdfjTNjY+NbIP0bEQYgO3i1cGusW3fe0C+Bs4aHBxUAnx70VYyxRhNFaAVI6wadm5x7JUFEU2DPEHjgfOiTB0XqpKWg3oZHSpAIQQNZX63FkWQR31asBQj2SRHwXMjjpRnfM8GwRpfo9K7nRyWRGgggNTPi45w40uMYJVdcCBaULozps8DU+H42CTCh1uFeC0m+9lc6yKrInRmGF9DPW4SkbRlQJs7hK41S1ZFVUNT+Z1SNF9QR8HN7uE0ELcEQFVvlSi6GTxm2mNsQxzBbuyXn4owGHo6xDh+aUTNAIR9gr7Jc8iCDk3N7hsaVB4fBD3L7j+IsXooqsGJRfgwUV7PdzK00iKiiwrsqapGo93gBlg/sau1lHS2u4AR7dhhFzZ9nCLAPX1Qi9y0wgkhSbJWqC31zoBw+S6rUmOau9322lwAnXJ5sG6PwzTSROyOoHmem5we08A0TBIKQJPWRb6z+wT5vLkwFqOkiA5IpUrgueE3VKQHNF0iodkWp/lRZErdc2H73TLkAFFjq4YViRYIU4g2VrGpBVWhOmvxVJrwUO9+mjA9k/74PSIeLXFUk6dcIpcCZiy8rRhBS5uFa2xJbKqqlqgkZtBcV9fP/nfTa4cLAOEwDK+reOpORhmQh8HqAV2VIRpGs/2Hajry4/m8sOOnn4k4I2PZyyOka0tVcVBqfVtpDPzMc2z45a4K4fl/TDgz2fqizlC/2iP2dyB3opO5tNNE3MpXZZ4LlSrIxT26UJh5sWSMUjJJ5xrVRVtaQkqwWYzQv/D1wKyEOmUQcYC8Lttp3Faookd0NJ75nh01ZykxLOVeGouGewtsiwp9GJ68VuSTDWRSCT/ZfcbNJVTrgfDRoIAAAAASUVORK5CYII=" rel="shortcut icon">
+  <title>Cat CRM</title>
+  <script type="module" crossorigin src="/scss/assets/index-6869d4f5.js"></script>
+  <link rel="stylesheet" href="/scss/assets/index.css">
+</head>
+
+<body class="page">
+
+  <aside class="sidebar js-menu" id="sidebar-menu">
+    <nav class="menu">
+
+      <button class="menu-btn js-menu-close" type="button" aria-label="Close menu">
+        <svg class="menu-btn-icon" width="20" height="20">
+          <use href="/scss/assets/symbol-defs.svg#close"></use>
+        </svg>
+      </button>
+
+      <a class="logo" href="./index.html">
+        <svg class="logo-icon" width="24" height="24">
+          <use href="/scss/assets/symbol-defs.svg#logo"></use>
+        </svg>
+        Cat CRM
+      </a>
+
+
+      <ul class="menu-list">
+        <li class="menu-item">
+          <a class="menu-link current" href="./index.html">
+            <svg class="menu-icon" width="20" height="20">
+              <use href="/scss/assets/symbol-defs.svg#icon-1"></use>
+            </svg>
+            Overview
           </a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link " href="./index.html">
+            <svg class="menu-icon" width="20" height="20">
+              <use href="/scss/assets/symbol-defs.svg#icon-2"></use>
+            </svg>
+            Contacts
+          </a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link " href="./index.html">
+            <svg class="menu-icon" width="20" height="20">
+              <use href="/scss/assets/symbol-defs.svg#icon-3"></use>
+            </svg>
+            Companies
+          </a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link " href="./index.html">
+            <svg class="menu-icon" width="20" height="20">
+              <use href="/scss/assets/symbol-defs.svg#icon-4"></use>
+            </svg>
+            Deals
+          </a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link " href="./index.html">
+            <svg class="menu-icon" width="20" height="20">
+              <use href="/scss/assets/symbol-defs.svg#icon-5"></use>
+            </svg>
+            Document
+          </a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link " href="./index.html">
+            <svg class="menu-icon" width="20" height="20">
+              <use href="/scss/assets/symbol-defs.svg#icon-6"></use>
+            </svg>
+            Message
+          </a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link " href="./index.html">
+            <svg class="menu-icon" width="20" height="20">
+              <use href="/scss/assets/symbol-defs.svg#icon-7"></use>
+            </svg>
+            Calendar
+          </a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link " href="./index.html">
+            <svg class="menu-icon" width="20" height="20">
+              <use href="/scss/assets/symbol-defs.svg#icon-8"></use>
+            </svg>
+            Report
+          </a>
+        </li>
+      </ul>
 
-          <h1 class="main-title title">
-            <span>Sass</span> <br />simple starter
-            <a
-              class="main-title-link"
-              href="https://github.com/goitacademy/vite-sass-app-template"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              template
-            </a>
-          </h1>
+    </nav>
+  </aside>
 
-          <ul class="main-badges badges">
-            <li class="badges-item">
-              <a class="badges-link" href="https://vitejs.dev/" target="_blank">Vite</a>
-            </li>
-            <li class="badges-item">
-              <a
-                class="badges-link"
-                href="https://elad2412.github.io/the-new-css-reset/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                The New CSS Reset
-              </a>
-            </li>
-            <li class="badges-item">
-              <a
-                class="badges-link"
-                href="https://www.npmjs.com/package/autoprefixer"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Autoprefixer
-              </a>
-            </li>
-            <li class="badges-item">
-              <a
-                class="badges-link"
-                href="https://www.npmjs.com/package/postcss-sort-media-queries"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                postcss-sort-media-queries
-              </a>
-            </li>
-          </ul>
+  <header class="header">
+    <button class="menu-btn js-menu-open" type="button" aria-expanded="false" aria-controls="sidebar-menu">
+      <svg class="menu-btn-icon" width="24" height="24">
+        <use href="/scss/assets/symbol-defs.svg#deshboard-m-m"></use>
+      </svg>
+      Overview
+    </button>
+
+    <label class="search-field">
+      <svg class="search-icon" width="20" height="20">
+        <use href="/scss/assets/symbol-defs.svg#dashboard-d-in"></use>
+      </svg>
+      <input class="search-input" type="search" name="user_search" placeholder="Search Something...">
+    </label>
+
+    <button class="notification-btn" type="button" data-notify="true" aria-label="Bell button">
+      <svg class="notification-btn-icon" width="20" height="20">
+        <use href="/scss/assets/symbol-defs.svg#deshboard-d-bell"></use>
+      </svg>
+    </button>
+  </header>
+
+  <main class="main">
+    <section class="welcome">
+
+      <h1 class="page-title">Hi Yaroslav,<p class="page-title-accent">Welcome into Cat CRM Dashboard</p>
+      </h1>
+
+      <button class=" btn btn--primary" type="button">
+        <svg class="btn-icon" width="8" height="8">
+          <use href="/scss/assets/symbol-defs.svg#btn-plus"></use>
+        </svg>
+        <span class="btn-inner">Primary normal</span>
+      </button>
+    </section>
+
+    <section class="co-workers">
+      <div class="co-workers-wrapper">
+        <h2 class="co-workers-title">Co-workers | <span>Marketing department</span></h2>
+
+        <div class="co-workers-container">
+
+          <details class="co-workers-details">
+            <summary class="co-workers-data">
+              <svg class="co-workers-icon" width="16" height="16">
+                <use class="plus" href="/scss/assets/symbol-defs.svg#btn-plus"></use>
+                <use class="minus" href="/scss/assets/symbol-defs.svg#btn-minus"></use>
+              </svg>
+
+              <div class="co-workers-bio">
+                <div class="thumb">
+                  <img src="data:image/jpeg;base64,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" alt="" width="24" height="24">
+                </div>
+                <p class="co-workers-caption">Andrew Mike</p>
+              </div>
+
+              <div class="co-workers-controls">
+                <button class="controls-btn" type="button">
+                  <svg class="controls-btn-icon success" width="20" height="20">
+                    <use href="/scss/assets/symbol-defs.svg#icon-9"></use>
+                  </svg>
+                </button>
+                <button class="controls-btn" type="button">
+                  <svg class="controls-btn-icon error" width="20" height="20">
+                    <use href="/scss/assets/symbol-defs.svg#icon-10"></use>
+                  </svg>
+                </button>
+              </div>
+
+            </summary>
+
+            <div class="co-workers-info">
+              <h3 class="co-workers-position">Job position</h3>
+              <p>Develop</p>
+              <h3 class="co-workers-accept">Since</h3>
+              <p>2013</p>
+            </div>
+
+          </details>
+
+          <details class="co-workers-details">
+            <summary class="co-workers-data">
+              <svg class="co-workers-icon" width="16" height="16">
+                <use class="plus" href="/scss/assets/symbol-defs.svg#btn-plus"></use>
+                <use class="minus" href="/scss/assets/symbol-defs.svg#btn-minus"></use>
+              </svg>
+
+              <div class="co-workers-bio">
+                <div class="thumb">
+                  <img src="data:image/jpeg;base64,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" alt="" width="24" height="24">
+                </div>
+                <p class="co-workers-caption">Andrew Mike</p>
+              </div>
+
+              <div class="co-workers-controls">
+                <button class="controls-btn" type="button">
+                  <svg class="controls-btn-icon success" width="20" height="20">
+                    <use href="/scss/assets/symbol-defs.svg#icon-9"></use>
+                  </svg>
+                </button>
+                <button class="controls-btn" type="button">
+                  <svg class="controls-btn-icon error" width="20" height="20">
+                    <use href="/scss/assets/symbol-defs.svg#icon-10"></use>
+                  </svg>
+                </button>
+              </div>
+
+            </summary>
+
+            <div class="co-workers-info">
+              <h3 class="co-workers-position">Job position</h3>
+              <p>Develop</p>
+              <h3 class="co-workers-accept">Since</h3>
+              <p>2013</p>
+            </div>
+
+          </details>
+
+          <details class="co-workers-details">
+            <summary class="co-workers-data">
+              <svg class="co-workers-icon" width="16" height="16">
+                <use class="plus" href="/scss/assets/symbol-defs.svg#btn-plus"></use>
+                <use class="minus" href="/scss/assets/symbol-defs.svg#btn-minus"></use>
+              </svg>
+
+              <div class="co-workers-bio">
+                <div class="thumb">
+                  <img src="data:image/jpeg;base64,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" alt="" width="24" height="24">
+                </div>
+                <p class="co-workers-caption">Andrew Mike</p>
+              </div>
+
+              <div class="co-workers-controls">
+                <button class="controls-btn" type="button">
+                  <svg class="controls-btn-icon success" width="20" height="20">
+                    <use href="/scss/assets/symbol-defs.svg#icon-9"></use>
+                  </svg>
+                </button>
+                <button class="controls-btn" type="button">
+                  <svg class="controls-btn-icon error" width="20" height="20">
+                    <use href="/scss/assets/symbol-defs.svg#icon-10"></use>
+                  </svg>
+                </button>
+              </div>
+
+            </summary>
+
+            <div class="co-workers-info">
+              <h3 class="co-workers-position">Job position</h3>
+              <p>Develop</p>
+              <h3 class="co-workers-accept">Since</h3>
+              <p>2013</p>
+            </div>
+
+          </details>
+
+          <details class="co-workers-details">
+            <summary class="co-workers-data">
+              <svg class="co-workers-icon" width="16" height="16">
+                <use class="plus" href="/scss/assets/symbol-defs.svg#btn-plus"></use>
+                <use class="minus" href="/scss/assets/symbol-defs.svg#btn-minus"></use>
+              </svg>
+
+              <div class="co-workers-bio">
+                <div class="thumb">
+                  <img src="data:image/jpeg;base64,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" alt="" width="24" height="24">
+                </div>
+                <p class="co-workers-caption">Andrew Mike</p>
+              </div>
+
+              <div class="co-workers-controls">
+                <button class="controls-btn" type="button">
+                  <svg class="controls-btn-icon success" width="20" height="20">
+                    <use href="/scss/assets/symbol-defs.svg#icon-9"></use>
+                  </svg>
+                </button>
+                <button class="controls-btn" type="button">
+                  <svg class="controls-btn-icon error" width="20" height="20">
+                    <use href="/scss/assets/symbol-defs.svg#icon-10"></use>
+                  </svg>
+                </button>
+              </div>
+
+            </summary>
+
+            <div class="co-workers-info">
+              <h3 class="co-workers-position">Job position</h3>
+              <p>Develop</p>
+              <h3 class="co-workers-accept">Since</h3>
+              <p>2013</p>
+            </div>
+
+          </details>
+
+          <details class="co-workers-details">
+            <summary class="co-workers-data">
+              <svg class="co-workers-icon" width="16" height="16">
+                <use class="plus" href="/scss/assets/symbol-defs.svg#btn-plus"></use>
+                <use class="minus" href="/scss/assets/symbol-defs.svg#btn-minus"></use>
+              </svg>
+
+              <div class="co-workers-bio">
+                <div class="thumb">
+                  <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEASABIAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAYABgDAREAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD+6d36+meuevp/kdetdTOVtLV/1/Xlqfht+1v/AMFi/GHwL8Y+JdK+CP7CHx//AGm/h38N/HN34H+J3xg8MzR+GPC9nqfh6/On+Nrb4caRJ4e8Q+IPiXN4U1S01fwzqmoQW3h/wzB4m0u8s4tevLe1ubiPjnmeTUa7wuMzfA4PE2i1Sr1eWzkuaMatWyo0XKLUlGpUU2mpclmm/Qo5HnONwyxeGy7E18NK7U6MOdyjFtOUYX9pUSateEZLXe6aP1H+BHx68A/tIfBb4a/Hj4ZX1zd+Bfin4U0zxb4fOoRQ2urWUGoRZutH1yyt7i7i0/xBoGox3mieINNS6uP7N1qwvrFpZWt2Zuxx5W1pp1TumujTWjUlqpK6kmmrpnjTfs24te+m007+61o076pp6Nb3VnZnuV5LKIJvsxj+0eVJ5HmgtF5+w+UZVVkYxhyu8B0JUEBlOCM587jL2duflfJzX5eaz5eazT5b2vZp2vZ9TVOEqkFU5vZKcfacjSm4XXPytqUVLlvytxavumtD+db9ojxTD4K02HSvDHibxPo2l+ONZudA8U3On29tf+Evhnr+ieI9QuPH9w2kw/ZNQfUb3Xrm7bxbfQXkE1rbR/bPOgW/urqT8PzH608TiXjoUJ4l15Tq0VSi/aVpu06cK0lUTjTs3R+JyvyxcrRcf6JyWjgZZZGrgq84YPDUIU4Tq4unTr+x2w044Vzo1ZzkpL27pU7Q1nNRtKL/AFH/AGYtHHgP9nP4a6CLCfSmex1zXmtLoNFdO3i/xVrvi1r+5tzFD9huNVOuHU5tOWKJNNkvHsUREtlUfr2UKtDKMBDEUpUasMLSpOnJvmjGnH2dK/NaUW6UYScHdwvyNy5eZ/z9xDPDvOMwnha8cTSqYmVVVoxUYyqVUqlZRs2pRp1pVKcaisqqgqnLFS5V/CzqP/B07/wUA8Y/HT4b+JfEkvgb4c/ADRfil4H134j/AAq+DXgbQpfFHjD4W6N4q0zUfF3gqDxz8TZPFur2es+J/DNvfaK+u6Pd+F3iuLv7TZDSY/kT9UfDmAp0KsYKVSu6U406tapK0Kji1CfJT5ItJ2aTjLTdvdfJLM686kHJqNNSg5xpxWsU/ejzSTkm0nqpL5H2v4y/4KEf8Ei/2nLax/aG8b+LrPwN8U9LudN8W+MfA3jS1+K0x1rWNOWC80eLxP8AD3QILL4dfGvxT4dgSHRDrMmlX48VT6VpovtR0HRCItD/AB6rwfxpg8zlhcEoTy2eNlVhjnLBVHTwtWt7SpTjOrGeNw8uVyjOFHlhOblO/LUnM/WocV8K4jKo18U6lPMFgo0amBpxxcefFUqKpQlam44OpTlNKcKtaTnTp2i0504xf78fsZ/8FTv2YP2/7DxPH8G/GEFv448Eanqdh4r+G2uXNpb+KLSx07U5dMt/F2gxxytF4p8Ba0UgutH8UaRvhjg1CwtNdtdC1mf+yk+ozDAYnAuMq8G6dS3LUgm4XavyT/kqR6werabi5JXPzCFaNW9nqtLPy2a7rzVrbaXA/9k=" alt="" width="24" height="24">
+                </div>
+                <p class="co-workers-caption">Andrew Mike</p>
+              </div>
+
+              <div class="co-workers-controls">
+                <button class="controls-btn" type="button">
+                  <svg class="controls-btn-icon success" width="20" height="20">
+                    <use href="/scss/assets/symbol-defs.svg#icon-9"></use>
+                  </svg>
+                </button>
+                <button class="controls-btn" type="button">
+                  <svg class="controls-btn-icon error" width="20" height="20">
+                    <use href="/scss/assets/symbol-defs.svg#icon-10"></use>
+                  </svg>
+                </button>
+              </div>
+
+            </summary>
+
+            <div class="co-workers-info">
+              <h3 class="co-workers-position">Job position</h3>
+              <p>Develop</p>
+              <h3 class="co-workers-accept">Since</h3>
+              <p>2013</p>
+            </div>
+
+          </details>
+
+          <table class="co-workers-table">
+            <caption class="visually-hidden">
+              Co-workers info
+            </caption>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Job position</th>
+                <th>Since</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <div class="thumb">
+                    <img src="data:image/jpeg;base64,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" alt="" width="24" height="24">
+                  </div>
+                </td>
+                <td>Andrew Mike</td>
+                <td>Developer</td>
+                <td>2013</td>
+                <td>
+                  <div class="co-workers-controls">
+                    <button class="controls-btn" type="button">
+                      <svg class="controls-btn-icon success" width="20" height="20">
+                        <use href="/scss/assets/symbol-defs.svg#icon-9"></use>
+                      </svg>
+                    </button>
+                    <button class="controls-btn" type="button">
+                      <svg class="controls-btn-icon error" width="20" height="20">
+                        <use href="/scss/assets/symbol-defs.svg#icon-10"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="thumb">
+                    <img src="data:image/jpeg;base64,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" alt="" width="24" height="24">
+                  </div>
+                </td>
+                <td>Andrew Mike</td>
+                <td>Developer</td>
+                <td>2013</td>
+                <td>
+                  <div class="co-workers-controls">
+                    <button class="controls-btn" type="button">
+                      <svg class="controls-btn-icon success" width="20" height="20">
+                        <use href="/scss/assets/symbol-defs.svg#icon-9"></use>
+                      </svg>
+                    </button>
+                    <button class="controls-btn" type="button">
+                      <svg class="controls-btn-icon error" width="20" height="20">
+                        <use href="/scss/assets/symbol-defs.svg#icon-10"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="thumb">
+                    <img src="data:image/jpeg;base64,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" alt="" width="24" height="24">
+                  </div>
+                </td>
+                <td>Andrew Mike</td>
+                <td>Developer</td>
+                <td>2013</td>
+                <td>
+                  <div class="co-workers-controls">
+                    <button class="controls-btn" type="button">
+                      <svg class="controls-btn-icon success" width="20" height="20">
+                        <use href="/scss/assets/symbol-defs.svg#icon-9"></use>
+                      </svg>
+                    </button>
+                    <button class="controls-btn" type="button">
+                      <svg class="controls-btn-icon error" width="20" height="20">
+                        <use href="/scss/assets/symbol-defs.svg#icon-10"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="thumb">
+                    <img src="data:image/jpeg;base64,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" alt="" width="24" height="24">
+                  </div>
+                </td>
+                <td>Andrew Mike</td>
+                <td>Developer</td>
+                <td>2013</td>
+                <td>
+                  <div class="co-workers-controls">
+                    <button class="controls-btn" type="button">
+                      <svg class="controls-btn-icon success" width="20" height="20">
+                        <use href="/scss/assets/symbol-defs.svg#icon-9"></use>
+                      </svg>
+                    </button>
+                    <button class="controls-btn" type="button">
+                      <svg class="controls-btn-icon error" width="20" height="20">
+                        <use href="/scss/assets/symbol-defs.svg#icon-10"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="thumb">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEASABIAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAYABgDAREAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD+6d36+meuevp/kdetdTOVtLV/1/Xlqfht+1v/AMFi/GHwL8Y+JdK+CP7CHx//AGm/h38N/HN34H+J3xg8MzR+GPC9nqfh6/On+Nrb4caRJ4e8Q+IPiXN4U1S01fwzqmoQW3h/wzB4m0u8s4tevLe1ubiPjnmeTUa7wuMzfA4PE2i1Sr1eWzkuaMatWyo0XKLUlGpUU2mpclmm/Qo5HnONwyxeGy7E18NK7U6MOdyjFtOUYX9pUSateEZLXe6aP1H+BHx68A/tIfBb4a/Hj4ZX1zd+Bfin4U0zxb4fOoRQ2urWUGoRZutH1yyt7i7i0/xBoGox3mieINNS6uP7N1qwvrFpZWt2Zuxx5W1pp1TumujTWjUlqpK6kmmrpnjTfs24te+m007+61o076pp6Nb3VnZnuV5LKIJvsxj+0eVJ5HmgtF5+w+UZVVkYxhyu8B0JUEBlOCM587jL2duflfJzX5eaz5eazT5b2vZp2vZ9TVOEqkFU5vZKcfacjSm4XXPytqUVLlvytxavumtD+db9ojxTD4K02HSvDHibxPo2l+ONZudA8U3On29tf+Evhnr+ieI9QuPH9w2kw/ZNQfUb3Xrm7bxbfQXkE1rbR/bPOgW/urqT8PzH608TiXjoUJ4l15Tq0VSi/aVpu06cK0lUTjTs3R+JyvyxcrRcf6JyWjgZZZGrgq84YPDUIU4Tq4unTr+x2w044Vzo1ZzkpL27pU7Q1nNRtKL/AFH/AGYtHHgP9nP4a6CLCfSmex1zXmtLoNFdO3i/xVrvi1r+5tzFD9huNVOuHU5tOWKJNNkvHsUREtlUfr2UKtDKMBDEUpUasMLSpOnJvmjGnH2dK/NaUW6UYScHdwvyNy5eZ/z9xDPDvOMwnha8cTSqYmVVVoxUYyqVUqlZRs2pRp1pVKcaisqqgqnLFS5V/CzqP/B07/wUA8Y/HT4b+JfEkvgb4c/ADRfil4H134j/AAq+DXgbQpfFHjD4W6N4q0zUfF3gqDxz8TZPFur2es+J/DNvfaK+u6Pd+F3iuLv7TZDSY/kT9UfDmAp0KsYKVSu6U406tapK0Kji1CfJT5ItJ2aTjLTdvdfJLM686kHJqNNSg5xpxWsU/ejzSTkm0nqpL5H2v4y/4KEf8Ei/2nLax/aG8b+LrPwN8U9LudN8W+MfA3jS1+K0x1rWNOWC80eLxP8AD3QILL4dfGvxT4dgSHRDrMmlX48VT6VpovtR0HRCItD/AB6rwfxpg8zlhcEoTy2eNlVhjnLBVHTwtWt7SpTjOrGeNw8uVyjOFHlhOblO/LUnM/WocV8K4jKo18U6lPMFgo0amBpxxcefFUqKpQlam44OpTlNKcKtaTnTp2i0504xf78fsZ/8FTv2YP2/7DxPH8G/GEFv448Eanqdh4r+G2uXNpb+KLSx07U5dMt/F2gxxytF4p8Ba0UgutH8UaRvhjg1CwtNdtdC1mf+yk+ozDAYnAuMq8G6dS3LUgm4XavyT/kqR6werabi5JXPzCFaNW9nqtLPy2a7rzVrbaXA/9k=" alt="" width="24" height="24">
+                  </div>
+                </td>
+                <td>Andrew Mike</td>
+                <td>Developer</td>
+                <td>2013</td>
+                <td>
+                  <div class="co-workers-controls">
+                    <button class="controls-btn" type="button">
+                      <svg class="controls-btn-icon success" width="20" height="20">
+                        <use href="/scss/assets/symbol-defs.svg#icon-9"></use>
+                      </svg>
+                    </button>
+                    <button class="controls-btn" type="button">
+                      <svg class="controls-btn-icon error" width="20" height="20">
+                        <use href="/scss/assets/symbol-defs.svg#icon-10"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-      </main>
-      <footer class="footer">
-        <div class="container">
-          Made with ❤ by
-          <a href="https://goit.global/ua/" target="_blank" rel="noopener noreferrer"> GoIT </a>
-        </div>
-      </footer>
-    </div>
+      </div>
 
-    
-  </body>
+      <ul class="co-workers-board board">
+        <li class="board-item">
+          <div class="board-left">
+            <h3 class="board-caption">Send benefit review by Sunday</h3>
+            <p class="board-details"> Due date:<time> December 23, 2023</time></p>
+            <div class="board-coworker person">
+              <div class="person-thumb">
+                <img class="person-avatar" src="data:image/jpeg;base64,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" alt="George Fields" width="24" height="24">
+              </div>
+              <p class="person-caption">George Fields</p>
+            </div>
+          </div>
+          <div class="board-right">
+            <p class="board-tag">Reminder</p>
+            <p class="badges-warning">Ended</p>
+          </div>
+        </li>
+
+        <li class="board-item">
+          <div class="board-left">
+            <h3 class="board-caption">Send benefit review by Sunday</h3>
+            <p class="board-details"> Due date:<time> December 23, 2023</time></p>
+            <div class="board-coworker person">
+              <div class="person-thumb">
+                <img class="person-avatar" src="data:image/jpeg;base64,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" alt="Amanda Pitt" width="24" height="24">
+              </div>
+              <p class="person-caption">Amanda Pitt</p>
+            </div>
+          </div>
+          <div class="board-right">
+            <p class="board-tag">Call</p>
+            <p class="badges-danger">Ended</p>
+
+          </div>
+        </li>
+      </ul>
+      <button class="co-workers-btn btn btn--secondary" type="button"><span class="btn-inner">Show more</span></button>
+    </section>
+
+    <section class="tasks">
+      <h2 class="tasks-title">Tasks (5)<span> | Today</span></h2>
+      <ul class="tasks-list">
+        <li class="tasks-item">
+          <label class="tasks-checkbox ">
+            <input class="tasks-input " type="checkbox" name="tasks_status" value="unfinished" />
+            <svg class="tasks-checkbox-icon" width="20" height="20">
+              <use href="/scss/assets/symbol-defs.svg#btn-success"></use>
+            </svg>
+
+          </label>
+
+          <div class="tasks-info">
+            <h3 class="tasks-heading">Update the documentation</h3>
+            <p class="tasks-desc">Dwuamish Head, Seattle WA <time>8:47 AM</time></p>
+          </div>
+
+          <button class="tasks-btn" type="button">
+            <svg class="tasks-btn-icon" width="20" height="20">
+              <use href="/scss/assets/symbol-defs.svg#icon-11"></use>
+            </svg>
+          </button>
+        </li>
+        <li class="tasks-item">
+          <label class="tasks-checkbox ">
+            <input class="tasks-input " type="checkbox" name="tasks_status" value="unfinished" />
+            <svg class="tasks-checkbox-icon" width="20" height="20">
+              <use href="/scss/assets/symbol-defs.svg#btn-success"></use>
+            </svg>
+
+          </label>
+
+          <div class="tasks-info">
+            <h3 class="tasks-heading">Update the documentation</h3>
+            <p class="tasks-desc">Dwuamish Head, Seattle WA <time>8:47 AM</time></p>
+          </div>
+
+          <button class="tasks-btn" type="button">
+            <svg class="tasks-btn-icon" width="20" height="20">
+              <use href="/scss/assets/symbol-defs.svg#icon-11"></use>
+            </svg>
+          </button>
+        </li>
+        <li class="tasks-item">
+          <label class="tasks-checkbox ">
+            <input class="tasks-input " type="checkbox" name="tasks_status" value="unfinished" />
+            <svg class="tasks-checkbox-icon" width="20" height="20">
+              <use href="/scss/assets/symbol-defs.svg#btn-success"></use>
+            </svg>
+
+          </label>
+
+          <div class="tasks-info">
+            <h3 class="tasks-heading">Update the documentation</h3>
+            <p class="tasks-desc">Dwuamish Head, Seattle WA <time>8:47 AM</time></p>
+          </div>
+
+          <button class="tasks-btn" type="button">
+            <svg class="tasks-btn-icon" width="20" height="20">
+              <use href="/scss/assets/symbol-defs.svg#icon-11"></use>
+            </svg>
+          </button>
+        </li>
+        <li class="tasks-item">
+          <label class="tasks-checkbox ">
+            <input class="tasks-input " type="checkbox" name="tasks_status" value="unfinished" />
+            <svg class="tasks-checkbox-icon" width="20" height="20">
+              <use href="/scss/assets/symbol-defs.svg#btn-success"></use>
+            </svg>
+
+          </label>
+
+          <div class="tasks-info">
+            <h3 class="tasks-heading">Update the documentation</h3>
+            <p class="tasks-desc">Dwuamish Head, Seattle WA <time>8:47 AM</time></p>
+          </div>
+
+          <button class="tasks-btn" type="button">
+            <svg class="tasks-btn-icon" width="20" height="20">
+              <use href="/scss/assets/symbol-defs.svg#icon-11"></use>
+            </svg>
+          </button>
+        </li>
+        <li class="tasks-item">
+          <label class="tasks-checkbox ">
+            <input class="tasks-input " type="checkbox" name="tasks_status" value="unfinished" />
+            <svg class="tasks-checkbox-icon" width="20" height="20">
+              <use href="/scss/assets/symbol-defs.svg#btn-success"></use>
+            </svg>
+
+          </label>
+
+          <div class="tasks-info">
+            <h3 class="tasks-heading">Update the documentation</h3>
+            <p class="tasks-desc">Dwuamish Head, Seattle WA <time>8:47 AM</time></p>
+          </div>
+
+          <button class="tasks-btn" type="button">
+            <svg class="tasks-btn-icon" width="20" height="20">
+              <use href="/scss/assets/symbol-defs.svg#icon-11"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </section>
+
+    <section class="reports">
+      <h2 class="reports-title">Task Report |<span> Last 2 Weeks</span></h2>
+      <ul class="reports-list">
+
+        <li class="reports-item" data-status="up">
+          <div class="reports-staff staff">
+            <div class="staff-thumb">
+              <img class="staff-avatar" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAInSURBVHgBxZdBTsJAFIbfNK5wwwLXdutKT4D1BkYOgN7AA5iICQfQEwAHgHADKyeQDWzLGhZdsez4/8OUlCbQokz9k6HMZDLfezDz5q+SI6S1ruMRoF2i1e1wjDZF+1ZKxWXXOiuaYGFttHu9XgcSRSLLpejVajOhVhN1iTh8n3NDjPQRwKBoXVUAfcbjVc9m9WQ0EpnP5aCurkQ1m+I1mxF6nUMBqD1AH48egEEpYF6NhngvL6IuLkL0nhBAVAi20M9kOPQ1oX+QengQr9WK8PUuD1euoEVwLzevd0ooxbW4JtfOjm/ByPZRL5fBKaFZuJ7PA7tZd8HQa9Ltiivp4dAw7PHcgJltMpn4kp5NF2CcDLS0JmwzbuvJRFzLZn1vwCZ1VqRjz+pvwGSARSYzvtEsgxVJLxZ83BJ8bTvVCHUe8gnmTy1VSW/AdU/+SQTHKOZSmc7P+RkTvJAKwebuhmkgOLSdKsFTz9iVWi1UuMSdQ8kgC8x0c41VqyWuRXcC9fmRggeIJnaZNTcwwFFqhwzYusM3l1nTCkGdbX8bkVLvyDj0HMDNmo1GmDV/+QLyBKsSnRLOtbgm186O7zV7cA1+srnGTgE9bPZy8B6MQUBXYutraXGTcr/wr5Oy9jYXwKPQrsCd0Cjogjs7A+RmpaH/2DtXSsgG0DaXOK9Q3N/a3mimzvOosCKhOGBoLDyeBe9RpcCZAOiZrtFuZPelLUL7Oual7QeSwwQySlMgmQAAAABJRU5ErkJggg==" alt="Ibnu Mas'ud" width="32" height="32">
+            </div>
+            <h3 class="staff-caption">Ibnu Mas'ud</h3>
+          </div>
+
+          <progress class="reports-bar" id="report_ibnu" max="100" value="89">
+            <div class="progress-bar">
+              <span style="width: 89%">Progress: 89%</span>
+            </div>
+          </progress>
+
+
+          <svg class="reports-icon" width="20" height="20">
+            <use class="up" href="/scss/assets/symbol-defs.svg#task-report-up"></use>
+            <use class="dash" href="/scss/assets/symbol-defs.svg#task-report-minus"></use>
+            <use class="down" href="/scss/assets/symbol-defs.svg#task-report-down"></use>
+          </svg>
+        </li>
+
+        <li class="reports-item" data-status="dash">
+          <div class="reports-staff staff">
+            <div class="staff-thumb">
+              <img class="staff-avatar" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAInSURBVHgBxZdBTsJAFIbfNK5wwwLXdutKT4D1BkYOgN7AA5iICQfQEwAHgHADKyeQDWzLGhZdsez4/8OUlCbQokz9k6HMZDLfezDz5q+SI6S1ruMRoF2i1e1wjDZF+1ZKxWXXOiuaYGFttHu9XgcSRSLLpejVajOhVhN1iTh8n3NDjPQRwKBoXVUAfcbjVc9m9WQ0EpnP5aCurkQ1m+I1mxF6nUMBqD1AH48egEEpYF6NhngvL6IuLkL0nhBAVAi20M9kOPQ1oX+QengQr9WK8PUuD1euoEVwLzevd0ooxbW4JtfOjm/ByPZRL5fBKaFZuJ7PA7tZd8HQa9Ltiivp4dAw7PHcgJltMpn4kp5NF2CcDLS0JmwzbuvJRFzLZn1vwCZ1VqRjz+pvwGSARSYzvtEsgxVJLxZ83BJ8bTvVCHUe8gnmTy1VSW/AdU/+SQTHKOZSmc7P+RkTvJAKwebuhmkgOLSdKsFTz9iVWi1UuMSdQ8kgC8x0c41VqyWuRXcC9fmRggeIJnaZNTcwwFFqhwzYusM3l1nTCkGdbX8bkVLvyDj0HMDNmo1GmDV/+QLyBKsSnRLOtbgm186O7zV7cA1+srnGTgE9bPZy8B6MQUBXYutraXGTcr/wr5Oy9jYXwKPQrsCd0Cjogjs7A+RmpaH/2DtXSsgG0DaXOK9Q3N/a3mimzvOosCKhOGBoLDyeBe9RpcCZAOiZrtFuZPelLUL7Oual7QeSwwQySlMgmQAAAABJRU5ErkJggg==" alt="Ibnu Mas'ud" width="32" height="32">
+            </div>
+            <h3 class="staff-caption">Ibnu Mas'ud</h3>
+          </div>
+
+          <progress class="reports-bar" id="report_ibnu" max="100" value="54">
+            <div class="progress-bar">
+              <span style="width: 89%">Progress: 89%</span>
+            </div>
+          </progress>
+
+          <svg class="reports-icon" width="20" height="20">
+            <use class="up" href="/scss/assets/symbol-defs.svg#task-report-up"></use>
+            <use class="dash" href="/scss/assets/symbol-defs.svg#task-report-minus"></use>
+            <use class="down" href="/scss/assets/symbol-defs.svg#task-report-down"></use>
+          </svg>
+        </li>
+
+        <li class="reports-item" data-status="up">
+          <div class="reports-staff staff">
+            <div class="staff-thumb">
+              <img class="staff-avatar" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAInSURBVHgBxZdBTsJAFIbfNK5wwwLXdutKT4D1BkYOgN7AA5iICQfQEwAHgHADKyeQDWzLGhZdsez4/8OUlCbQokz9k6HMZDLfezDz5q+SI6S1ruMRoF2i1e1wjDZF+1ZKxWXXOiuaYGFttHu9XgcSRSLLpejVajOhVhN1iTh8n3NDjPQRwKBoXVUAfcbjVc9m9WQ0EpnP5aCurkQ1m+I1mxF6nUMBqD1AH48egEEpYF6NhngvL6IuLkL0nhBAVAi20M9kOPQ1oX+QengQr9WK8PUuD1euoEVwLzevd0ooxbW4JtfOjm/ByPZRL5fBKaFZuJ7PA7tZd8HQa9Ltiivp4dAw7PHcgJltMpn4kp5NF2CcDLS0JmwzbuvJRFzLZn1vwCZ1VqRjz+pvwGSARSYzvtEsgxVJLxZ83BJ8bTvVCHUe8gnmTy1VSW/AdU/+SQTHKOZSmc7P+RkTvJAKwebuhmkgOLSdKsFTz9iVWi1UuMSdQ8kgC8x0c41VqyWuRXcC9fmRggeIJnaZNTcwwFFqhwzYusM3l1nTCkGdbX8bkVLvyDj0HMDNmo1GmDV/+QLyBKsSnRLOtbgm186O7zV7cA1+srnGTgE9bPZy8B6MQUBXYutraXGTcr/wr5Oy9jYXwKPQrsCd0Cjogjs7A+RmpaH/2DtXSsgG0DaXOK9Q3N/a3mimzvOosCKhOGBoLDyeBe9RpcCZAOiZrtFuZPelLUL7Oual7QeSwwQySlMgmQAAAABJRU5ErkJggg==" alt="Ibnu Mas'ud" width="32" height="32">
+            </div>
+            <h3 class="staff-caption">Ibnu Mas'ud</h3>
+          </div>
+
+          <progress class="reports-bar" id="report_ibnu" max="100" value="89">
+            <div class="progress-bar">
+              <span style="width: 89%">Progress: 89%</span>
+            </div>
+          </progress>
+
+          <svg class="reports-icon" width="20" height="20">
+            <use class="up" href="/scss/assets/symbol-defs.svg#task-report-up"></use>
+            <use class="dash" href="/scss/assets/symbol-defs.svg#task-report-minus"></use>
+            <use class="down" href="/scss/assets/symbol-defs.svg#task-report-down"></use>
+          </svg>
+        </li>
+
+        <li class="reports-item" data-status="dash">
+          <div class="reports-staff staff">
+            <div class="staff-thumb">
+              <img class="staff-avatar" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAInSURBVHgBxZdBTsJAFIbfNK5wwwLXdutKT4D1BkYOgN7AA5iICQfQEwAHgHADKyeQDWzLGhZdsez4/8OUlCbQokz9k6HMZDLfezDz5q+SI6S1ruMRoF2i1e1wjDZF+1ZKxWXXOiuaYGFttHu9XgcSRSLLpejVajOhVhN1iTh8n3NDjPQRwKBoXVUAfcbjVc9m9WQ0EpnP5aCurkQ1m+I1mxF6nUMBqD1AH48egEEpYF6NhngvL6IuLkL0nhBAVAi20M9kOPQ1oX+QengQr9WK8PUuD1euoEVwLzevd0ooxbW4JtfOjm/ByPZRL5fBKaFZuJ7PA7tZd8HQa9Ltiivp4dAw7PHcgJltMpn4kp5NF2CcDLS0JmwzbuvJRFzLZn1vwCZ1VqRjz+pvwGSARSYzvtEsgxVJLxZ83BJ8bTvVCHUe8gnmTy1VSW/AdU/+SQTHKOZSmc7P+RkTvJAKwebuhmkgOLSdKsFTz9iVWi1UuMSdQ8kgC8x0c41VqyWuRXcC9fmRggeIJnaZNTcwwFFqhwzYusM3l1nTCkGdbX8bkVLvyDj0HMDNmo1GmDV/+QLyBKsSnRLOtbgm186O7zV7cA1+srnGTgE9bPZy8B6MQUBXYutraXGTcr/wr5Oy9jYXwKPQrsCd0Cjogjs7A+RmpaH/2DtXSsgG0DaXOK9Q3N/a3mimzvOosCKhOGBoLDyeBe9RpcCZAOiZrtFuZPelLUL7Oual7QeSwwQySlMgmQAAAABJRU5ErkJggg==" alt="Ibnu Mas'ud" width="32" height="32">
+            </div>
+            <h3 class="staff-caption">Ibnu Mas'ud</h3>
+          </div>
+
+          <progress class="reports-bar" id="report_ibnu" max="100" value="66">
+            <div class="progress-bar">
+              <span style="width: 89%">Progress: 89%</span>
+            </div>
+          </progress>
+
+          <svg class="reports-icon" width="20" height="20">
+            <use class="up" href="/scss/assets/symbol-defs.svg#task-report-up"></use>
+            <use class="dash" href="/scss/assets/symbol-defs.svg#task-report-minus"></use>
+            <use class="down" href="/scss/assets/symbol-defs.svg#task-report-down"></use>
+          </svg>
+        </li>
+
+        <li class="reports-item" data-status="down">
+          <div class="reports-staff staff">
+            <div class="staff-thumb">
+              <img class="staff-avatar" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAInSURBVHgBxZdBTsJAFIbfNK5wwwLXdutKT4D1BkYOgN7AA5iICQfQEwAHgHADKyeQDWzLGhZdsez4/8OUlCbQokz9k6HMZDLfezDz5q+SI6S1ruMRoF2i1e1wjDZF+1ZKxWXXOiuaYGFttHu9XgcSRSLLpejVajOhVhN1iTh8n3NDjPQRwKBoXVUAfcbjVc9m9WQ0EpnP5aCurkQ1m+I1mxF6nUMBqD1AH48egEEpYF6NhngvL6IuLkL0nhBAVAi20M9kOPQ1oX+QengQr9WK8PUuD1euoEVwLzevd0ooxbW4JtfOjm/ByPZRL5fBKaFZuJ7PA7tZd8HQa9Ltiivp4dAw7PHcgJltMpn4kp5NF2CcDLS0JmwzbuvJRFzLZn1vwCZ1VqRjz+pvwGSARSYzvtEsgxVJLxZ83BJ8bTvVCHUe8gnmTy1VSW/AdU/+SQTHKOZSmc7P+RkTvJAKwebuhmkgOLSdKsFTz9iVWi1UuMSdQ8kgC8x0c41VqyWuRXcC9fmRggeIJnaZNTcwwFFqhwzYusM3l1nTCkGdbX8bkVLvyDj0HMDNmo1GmDV/+QLyBKsSnRLOtbgm186O7zV7cA1+srnGTgE9bPZy8B6MQUBXYutraXGTcr/wr5Oy9jYXwKPQrsCd0Cjogjs7A+RmpaH/2DtXSsgG0DaXOK9Q3N/a3mimzvOosCKhOGBoLDyeBe9RpcCZAOiZrtFuZPelLUL7Oual7QeSwwQySlMgmQAAAABJRU5ErkJggg==" alt="Ibnu Mas'ud" width="32" height="32">
+            </div>
+            <h3 class="staff-caption">Ibnu Mas'ud</h3>
+          </div>
+
+          <progress class="reports-bar" id="report_ibnu" max="100" value="28">
+            <div class="progress-bar">
+              <span style="width: 89%">Progress: 89%</span>
+            </div>
+          </progress>
+
+          <svg class="reports-icon" width="20" height="20">
+            <use class="up" href="/scss/assets/symbol-defs.svg#task-report-up"></use>
+            <use class="dash" href="/scss/assets/symbol-defs.svg#task-report-minus"></use>
+            <use class="down" href="/scss/assets/symbol-defs.svg#task-report-down"></use>
+          </svg>
+        </li>
+
+      </ul>
+    </section>
+  </main>
+
+
+
+  
+</body>
+
 </html>
